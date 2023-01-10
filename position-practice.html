@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        .swimming div{
+            border: 1px solid red;
+            width: 200px;
+        }
+
+        /* relative - nijer jaiga faka e thakbe but se move korte parbe */
+        /* absolute - nijer jaiga faka thakbe na filled up hoye jabe next element diye and se overlap korbe but theke chaile move korano jabe tar parent position a top left kore  */
+        /* sticky - tar nijer section porjonto se sticky thakbe and top-100px mane 100px er por theke se sticky hobe and porer section a chole gele oi sticky r kaj korbe na*/ 
+        /* fixed - oi position a full fixed full body te jotoi scroll kori se tar position a fixed thakbe */
+
+        /* z-index - kar upore k boshbe k overlap image hobe eta thik kora jai but er jonno position:relative diye then z-index er value boshate hobe suppose first a 1 boshale jodi next pic er upore dekhte chai then 1 theke beshi jekono value dite hobe */
+        .swimming{
+            position: relative;
+        }
+
+        #boy{
+            position: relative;
+            top: 75px;
+            z-index: 3;
+        }
+        #ring{
+            position: relative;
+            z-index: 2;
+        }
+        #water{
+            position: relative;
+            top: -75px;
+            z-index: 1;
+        }
+        .dummy{
+            height: 200px;
+            width: 300px;
+            background-color: aquamarine;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>This is CSS Position</h2>
+        <h2>Static</h2>
+        <h2>Relative</h2>
+        <h2>Absolute</h2>
+        <br>
+        <h2>This is Navbar Position</h2>
+        <h2>Fixed</h2>
+        <h2>Sticky</h2>
+        <h2>This is Image Position</h2>
+        <h2>Z-Index</h2>
+        <br>
+    </section>
+
+    <section class="swimming">
+        <div id="boy"><img src="images/boy.svg" alt=""></div>
+        <div id="ring"><img src="images/ring.svg" alt=""></div>
+        <div id="water"><img src="images/water.svg" alt=""></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+
+    <section>
+        <h3>this is another section</h3>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+</body>
+
+</html>
